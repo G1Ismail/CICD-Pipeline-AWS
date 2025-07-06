@@ -13,6 +13,6 @@ public class TestController {
 
     @GetMapping
     public ResponseEntity<Map<String,String>> methode1(){
-        return ResponseEntity.ok().body(Map.of("Testing", "done"));
+        return ResponseEntity.ok().body(Map.of("Testing", "fertig"));
     }
 }
