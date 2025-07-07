@@ -12,13 +12,13 @@ import java.util.Map;
 public class TestController {
 
 
-    @GetMapping
+    /*@GetMapping
     public ResponseEntity<Map<String, String>> healthCheck(){
         return ResponseEntity.ok().body(Map.of("App Zustand", "funktionert ohne Probleme, ..."));
-    }
+    }*/
 
     @GetMapping("/api")
     public ResponseEntity<Map<String,String>> methode1(){
-        return ResponseEntity.ok().body(Map.of("Testing", "fertig"));
+        return ResponseEntity.ok().body(Map.of("endpoint1", "up and running"));
     }
 }
